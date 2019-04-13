@@ -1,0 +1,187 @@
+/*Cabeçalho*/
+
+.cabecalho_principal{
+  display: flex;
+  justify-content: space-between;
+  align-items: columns;
+  margin:50px;  
+
+}
+
+.logo_ipb{
+   max-width:200px;
+   max-height:80px;
+   width: auto;
+   height: auto;  
+}
+
+.menu{
+   font:16px arial,tahoma,verdana;
+   list-style:none;
+   margin:0;
+   padding:0;
+}
+
+.menu_primario{
+
+  float:left;
+  display:block;
+}
+
+.pri_link{
+ margin: 0 0 0 10px;
+  color:#555;
+  background:#fff;
+  text-decoration:none;
+  padding:15px 20px;
+  border: 1px solid #9799A6;
+  display:block;
+
+}
+.sublink{
+   margin: 0 0 0 10px;
+  color:#555;
+  background:#fff;
+  text-decoration:none;
+  padding:15px 20px;
+  border: 1px solid #9799A6;
+  display:block;
+  }
+
+.menu_secundario{
+ display:none;
+}
+
+.menu_primario .pri_link:hover {
+  background:#066;
+  color:#fff;
+}
+.menu_primario:hover .menu_secundario {
+  display:block;
+  position:absolute;
+}
+.menu_primario:hover .sublink {
+    float:none;
+    font-size:12px;
+}
+.cabecalho_principal .menu_primario:hover .sublink {
+    width: 100%;
+    background:#333;
+    color:#fff;
+}
+.menu_primario:hover .menu_secundario .sublink:hover {
+    background:#066;
+
+}
+#control-nav{
+  display:none;
+
+}
+
+/* conteudo principal*/
+.conteudo_principal{
+  
+   background:#ccc;
+}
+
+/*Cabeçalho em telas menores*/
+@media screen and (max-width: 767px) {
+
+.cabecalho_principal  .menu .menu_primario {
+    width: 100%;
+    border: solid #ccc;
+    border-width: 0 0 1px;
+}
+ .menu_primario:hover .menu_secundario {
+  display:block;
+  position:static;
+ 
+}
+
+ .cabecalho_principal .control-nav {
+    width: 100%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #333;
+    border-width: 3px 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .cabecalho_principal .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+
+  }
+
+  .cabecalho_principal .control-nav-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+   
+  }
+.cabecalho_principal .menu .menu_primario .pri_link {
+   margin: 0 0 0 0px;
+}
+.cabecalho_principal nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background: #fff;
+    overflow-x: auto;
+    z-index: 2;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+
+  }
+}
+
+#control-nav:checked ~ .control-nav-close {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#control-nav:checked ~ nav {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  
+}
+
+/* Rodapé*/
+
+ .rodape_principal_sociedades{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 45px 0; 
+
+}
+
+@media screen and (max-width: 767px) {
+    .rodape_principal_sociedades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+}

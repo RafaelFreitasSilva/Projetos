@@ -1,0 +1,144 @@
+.mySlides {display:none}
+
+/*Contentor de slides */
+.slideshow-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0;
+  margin: auto;
+
+}
+
+/* Número de texto (1/2) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/*Os pontos / balas / indicadores */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+.active {
+  background-color: #717171;
+}
+
+/*  Em telas menores*/
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+}
+.slide_image{
+
+  max-width:100%;
+  max-height:50%;
+  width: auto;
+  height: auto;
+}
+
+/* conteudo principal*/
+.atividades{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+
+}
+
+.titulo_principal {
+ 
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 0.83em auto;
+  font-weight: bold;
+
+}
+
+
+.pregacacao_video{
+ border: 1px solid #000;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width:40%;
+  height: 400px;
+}
+
+.videos_canal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+/* Telas maiores conteúdo principal*/
+ @media (max-width: 1400px){
+  
+
+.pregacacao_video{
+  border: 1px solid #000;
+  align-items: center;
+  margin: 0 auto;
+  margin:20px; 
+  width:40%;
+ 
+
+}
+
+ }
+/* Telas menores conteúdo principal*/
+ @media (max-width: 600px) {
+  
+  .videos_canal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.pregacacao_video{
+  margin:20px; 
+  width:80%;
+  height:20%; 
+ 
+}
+ .atividades{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 9px;}
+}
+
+.conteudo{
+  
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+
+}
+.sub_titulo{
+
+    display: block;
+    font-size: 1.5em;
+    margin: 0.83em auto;
+    font-weight: bold;
+}
+

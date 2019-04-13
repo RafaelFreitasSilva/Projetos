@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Menu</title>
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.menu{
+			width: 100%;
+			height: 50%;
+			background-color: black;
+			font-family: 'Arial';
+		}
+		.menu ul{
+			list-style: none;
+			position: relative;
+		}
+		.menu ul li{
+			width: 150px;
+			float: left;
+		}
+		.menu a{
+			padding: 15px;
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			background-color: #222;
+			color: #fff;
+		}
+		.menu ul ul{
+			position: absolute;
+			visibility: hidden;
+
+		}
+			.menu ul li:hover ul{
+				visibility: visible;
+			}
+		.menu a:hover{
+			background-color: #f4f4f4;
+			color: #555;
+		}
+		.menu ul ul li{
+			float: none;
+			border-bottom: solid 1px #ccc;
+		}
+
+		.menu ul ul li a {
+			background-color: #069;
+		}
+
+		label[for="bt_menu"]{
+			padding: 5px;
+			background-color: #222;
+			color: #fff;
+			font-family: "Arial";
+			text-align: center;
+			font-size: 30px;
+			cursor: pointer;
+			width: 50px;
+			height: 50px
+		}
+		#bt_menu{
+			display: none;
+		}
+		label[for="bt_menu"]{
+			display: none;
+		}
+
+		@media(max-width: 800px){
+			label[for="bt_menu"]{
+			display: block;
+		}
+
+		#bt_menu:checked ~ .menu{
+			margin-left: 0;
+		}
+			.menu{
+				margin-top: 5px;
+				margin-left: -100%;
+				transition: all .4s;
+			}
+			.menu ul li {
+				width: 100%;
+				float: none;
+			}
+			.menu ul ul{
+				position: static;
+				overflow: hidden;
+				max-height: 0;
+				transition: all .4s;
+			}
+			.menu ul li:hover ul{
+				height: auto;
+				max-height: 5000px;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+
+	<input type="checkbox" id="bt_menu">
+	<label for=bt_menu>&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li ><a href="index.html">Home</a></li>
+				<li><a href="#">Sociedades Internas</a>
+					<ul>
+						<li><a href="ucp.html">UCP</a></li>
+						<li><a href="upa.html">UPA</a></li>
+						<li><a href="ump.html">UMP</a></li>
+						<li><a  href="saf.html">SAF</a></li>
+						<li><a  href="uph.html">UPH</a></li>
+					</ul>
+				</li>
+				<li><a href="http://2ipem.blogspot.com.br/p/pregacoes.html">Pregações</a>
+				<li ><a href="#">História</a>
+					<ul >
+						<li><a href="reforma.html">Reforma Protestante</a></li>
+						<li><a href="nossa_historia.html">Historia da iPB</a></li>
+					</ul>
+				</li>
+				<li ><a  href="http://2ipem.blogspot.com.br/">Blog</a></li>
+				<li ><a  href="#">Agenda</a>
+					<ul>
+						<li><a href="plantao.html">Plantão pastoral</a></li>
+						<li><a  href="agenda_completa.html">Agenda completa</a></li>
+					</ul>
+				</li>
+				<li ><a  href="#">Contato</a>
+					<ul >
+						<li><a href="localizacao.html">Localização</a></li>
+						<li><a  href="lideranca.html">Liderança da Igreja</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</body>
+</html>
