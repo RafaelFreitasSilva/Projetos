@@ -1,0 +1,126 @@
+body {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'roboto', sans-serif;
+    margin: 3vh 0;
+    text-align: center; 
+    background-color: #fff;   
+  }
+
+.cabecaho_principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+}
+
+.cabecaho_principal .titulo {
+    font-size: 40px;
+    color: #02b3e4;
+}
+
+.cabecaho_principal .ter {
+    font-size: 20px;
+    color: #02b3e4;
+    margin: 5%;
+}
+
+.logo {  
+    padding: 10PX;
+    max-width: 200px; 
+    max-height: 80px; 
+}
+
+.conteudoPrincipal {
+    background-color: #7d97ad;
+}
+
+.sub_titulo {
+    width: 100%;
+    background-color: #7d97ad;
+    font-size: 30px;
+}
+
+.linguagens_web {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    padding: 45px 0;
+    background-color: #7d97ad;
+}
+
+.linguagens_web figure img{
+    width: 33.3%;
+}
+
+
+.texto {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: start;
+}
+
+.rodape {
+    width: 70%;
+    margin: 0 auto; 
+    padding: 30px 0; 
+    text-align: start;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        
+        background-color: #fff;     
+    }
+
+    .cabecaho_principal {
+        display: inline;
+        justify-content: space-between;  
+    }
+
+    .prin_image{
+        max-width: 200px; 
+        max-height: 80px; 
+    }
+
+    .texto {    
+        width: 90%;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .sub_titulo {
+        width: 100%;
+        background-color: #7d97ad;
+    }
+
+    .linguagens_web {
+        background-color: #7d97ad;
+        display: grid;
+        justify-content: center;
+    }
+
+    .banner {
+        background-color: #7d97ad;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width: 960px) {
+    
+    .linguagens_web {
+        justify-content: flex-start;
+    }
+    .texto {    
+        font-size: 20px;
+    }
+
+}

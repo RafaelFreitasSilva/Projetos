@@ -1,0 +1,28 @@
+.espacamento{
+      width:1000px;
+      padding: 8px;
+}
+
+.fato_animal {
+    font-style: italic;
+    padding: 8px 8px 8px 8px;
+}
+
+.lista_label {
+    font-weight:bold;
+    padding: 8px 8px 8px 8px;
+}
+
+.lista{
+    list-style-type: none;
+}
+
+.borda_info {
+    border: 2px solid black;
+    padding: 8px 8px 8px 8px;
+}
+
+.borda_descricao{
+    padding: 8px 8px 8px 8px;
+    border: 2px solid black;
+}
